@@ -42,7 +42,7 @@ def data(people):
 
 
     elif people == "Adult (Above 15)":
-        adult_data = pd.read_csv("./adults_data.csv", encoding='latin-1')
+        adult_data = pd.read_csv("https://github.com/sakshisingh12/Literacy-Rate/blob/main/app/adults_data.csv", encoding='latin-1')
         st.write("""
             ## Adults
             ### Age Group Above 15 Years
