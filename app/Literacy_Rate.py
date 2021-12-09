@@ -2,7 +2,7 @@ from typing import List
 import streamlit as st
 import numpy as np
 import pandas as pd
-import plotly as px
+import plotly.express as px
 
 st.set_page_config(layout="wide")
 st.title("Literacy Rate")
