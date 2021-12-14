@@ -10,7 +10,7 @@ people = st.sidebar.selectbox("Select the Age Group!",("Youth (15-24)", "Adult (
 
 def data(people):
     if people == "Youth (15-24)":
-        youth_data = pd.read_csv("https://github.com/sakshisingh12/Literacy-Rate/blob/main/app/youth_data.csv")
+        youth_data = pd.read_csv("https://github.com/sakshisingh12/Literacy-Rate/blob/main/app/youth_data.csv", delimiter=",", encoding='utf-8')
         st.write("""
             ## Youth 
             ### Age Group 15-24 Years
@@ -42,7 +42,7 @@ def data(people):
 
 
     elif people == "Adult (Above 15)":
-        adult_data = pd.read_csv("https://github.com/sakshisingh12/Literacy-Rate/blob/main/app/adults_data.csv", encoding='latin-1')
+        adult_data = pd.read_csv("https://github.com/sakshisingh12/Literacy-Rate/blob/main/app/adults_data.csv", delimiter=",", encoding='utf-8')
         st.write("""
             ## Adults
             ### Age Group Above 15 Years
